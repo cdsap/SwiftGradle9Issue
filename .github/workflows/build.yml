@@ -30,8 +30,8 @@ jobs:
         with:
           xcode-version: latest-stable
 
-      - name: Test
+      - name: build
         run: |
           ./gradlew build
         env:
-          develocity-access-key: ${{ secrets.DV_SOLUTIONS_ACCESS_KEY }}
+          DEVELOCITY_ACCESS_KEY: ${{ secrets.DV_SOLUTIONS_ACCESS_KEY }}
