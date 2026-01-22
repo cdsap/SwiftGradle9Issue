@@ -5,7 +5,7 @@ on:
   workflow_dispatch: {}
   push:
     branches:
-      - 'master'
+      - 'main'
     tags-ignore:
       - '**'
 
@@ -28,12 +28,12 @@ jobs:
         with:
           cache-read-only: false
 
- 
+
       - name: Test Native, JS and Wasm
         run: |
           ./gradlew build
 
- 
+
   multiplatform:
     runs-on: macos-latest
 
