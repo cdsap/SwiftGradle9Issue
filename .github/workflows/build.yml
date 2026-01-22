@@ -33,4 +33,5 @@ jobs:
       - name: Test
         run: |
           ./gradlew build
-        develocity-access-key: ${{ secrets.DV_SOLUTIONS_ACCESS_KEY }}
+        env:
+          develocity-access-key: ${{ secrets.DV_SOLUTIONS_ACCESS_KEY }}
